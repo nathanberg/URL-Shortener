@@ -2,7 +2,6 @@ class ShortUrlsController < ApplicationController
 
   # Since we're working on an API, we don't have authenticity tokens
   skip_before_action :verify_authenticity_token
-  before_action :only_respond_to_json
   before_action :set_short_url, only: [:show]
 
 
@@ -31,10 +30,6 @@ class ShortUrlsController < ApplicationController
   end
 
   private
-
-  def only_respond_to_json
-    head :not_acceptable unless params[:format] == 'json'
-  end
 
   # Use callbacks to share common setup or constraints between actions.
   def set_short_url
