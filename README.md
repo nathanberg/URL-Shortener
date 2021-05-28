@@ -30,3 +30,10 @@
 # Checking your short URL redirect
 
     curl -I localhost:3000/abc
+
+# Features a bitjective function to convert ID to a ShortUrl
+
+    Bitjective functions are a type of function that work in both directions.
+    i.e. f(a) = 1 & f(1) = a
+    
+    An in-depth explanation of how exactly bitjective functions operate may be found here: https://stackoverflow.com/questions/742013/how-do-i-create-a-url-shortener/742047#742047
